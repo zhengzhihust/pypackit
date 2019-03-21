@@ -37,7 +37,6 @@ Copyright 2009–2019 by Codility Limited. All Rights Reserved. Unauthorized cop
 RANGE_N = (0, 100000)
 RANGE_E = (-2147483648, 2147483647)
 
-
 def solution(A):
     assert A is not None
     N = len(A)
