@@ -47,6 +47,11 @@ Copyright 2009–2019 by Codility Limited. All Rights Reserved. Unauthorized cop
 """
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
+
+"""
+Detected time complexity:O(N)
+"""
+
 NR_POSSIBLE_ROLLS = 6
 MIN_VALUE = -10000000001
 RANGE_N = (2, 100000)
