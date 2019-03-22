@@ -12,7 +12,7 @@ def printEdge(X, tR, tC, dR, dC):
     result = []
     if tR == dR:
         result.extend([X[tR][i] for i in range(tC,dC + 1)])
-    elif dC == dC:
+    elif tC == dC:
         result.extend([X[i][tC] for i in range(tR, dR + 1)])
     else:
         curC = tC
@@ -21,7 +21,7 @@ def printEdge(X, tR, tC, dR, dC):
             result.append(X[tR][curC])
             curC += 1
         while curR != dR:
-            result.append(X[curR][tC])
+            result.append(X[curR][dC])
             curR += 1
         while curC != tC:
             result.append(X[dR][curC])
