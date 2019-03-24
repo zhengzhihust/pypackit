@@ -8,8 +8,8 @@
 
 3. It pays off to have a debugging infrastructure with a kill-switch.
 
-4. Your real-world expertise (probably) doesn't matter, only the algorithm. 
+4. Your real-world expertise (probably) does not matter, only the algorithm. 
 
-5. And yet don't get too algorithmical-idealistic.
+5. And yet don't get too algorithmically idealistic.
 
 6. Consider what the recruiter gets about you.

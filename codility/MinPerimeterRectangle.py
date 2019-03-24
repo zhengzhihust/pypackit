@@ -29,7 +29,9 @@ Detected time complexity: O(sqrt(N))
 """
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
-RANGE_N = (1,1000000000)
+RANGE_N = (1, 1000000000)
+
+
 def solution(N):
     # write your code in Python 3.6
     assert isinstance(N, int) and RANGE_N[0] <= N <= RANGE_N[1]

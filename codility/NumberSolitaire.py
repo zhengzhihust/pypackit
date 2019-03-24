@@ -71,7 +71,8 @@ def solution(A):
         max_previous = MIN_VALUE
         for previous_idx in range(NR_POSSIBLE_ROLLS):
             max_previous = max(max_previous, sub_solutions[idx - previous_idx - 1])
-        # the value for each iteration is the value at the A array plus the best value from which this index can be reached
+        # the value for each iteration is the value at the A array plus the best value from which this index can be
+        # reached
         assert RANGE_E[0] <= A[idx - NR_POSSIBLE_ROLLS] <= RANGE_E[1]
         sub_solutions[idx] = A[idx - NR_POSSIBLE_ROLLS] + max_previous
 

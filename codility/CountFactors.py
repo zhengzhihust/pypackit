@@ -36,18 +36,21 @@ def solution(N):
             result.append(ret)
     return len(result)
 
+
 """
 Complexity:
 expected worst-case time complexity is O(sqrt(N));
 expected worst-case space complexity is O(1).
 """
+
+
 def solution_best(N):
     cnt = 0
     i = 1
     while i * i <= N:
         if N % i == 0:
             if i * i == N:
-               cnt += 1
+                cnt += 1
             else:
                 cnt += 2
         i += 1

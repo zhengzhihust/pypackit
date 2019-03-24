@@ -75,5 +75,4 @@ def solution(A, B):
             stack.append(A[idx])
 
     survivals += len(stack)
-
     return survivals

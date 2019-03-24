@@ -76,13 +76,14 @@ expected worst-case time complexity is O(N*log(log(N)));
 expected worst-case space complexity is O(N)
 """
 
-RANGE_N = (1,100000)
-RANGE_E = (0,1000000000)
+RANGE_N = (1, 100000)
+RANGE_E = (0, 1000000000)
+
 
 def solution(A):
     assert A is not None and RANGE_N[0] <= len(A) <= RANGE_N[1]
 
-    peaks = [] # the index of peaks
+    peaks = []  # the index of peaks
 
     for idx in range(1, len(A) - 1):
 
@@ -100,7 +101,7 @@ def solution(A):
             found = [False] * size
             found_cnt = 0
             for peak in peaks:
-                block_nr = peak // block_size # what is the mathematical meaning?
+                block_nr = peak // block_size  # what is the mathematical meaning?
                 if not found[block_nr]:
                     found[block_nr] = True
                     found_cnt += 1

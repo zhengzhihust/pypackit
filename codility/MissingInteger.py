@@ -24,8 +24,10 @@ Detected time complexity: O(N**2)
 """
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
-RANGE_N = (1,100000)
-RANGE_E = (-1000000,1000000)
+RANGE_N = (1, 100000)
+RANGE_E = (-1000000, 1000000)
+
+
 def solution(A):
     # write your code in Python 3.6
     assert A is not None
@@ -36,14 +38,17 @@ def solution(A):
     if M <= 0:
         return 1
     else:
-        for i in range(1,M + 1):
+        for i in range(1, M + 1):
             if i not in A:
                 return i
     return M + 1
 
+
 """
 Detected time complexity: O(N)
 """
+
+
 def solution_best(A):
     seen = [False] * len(A)
     for value in A:
@@ -51,7 +56,7 @@ def solution_best(A):
             seen[value - 1] = True
 
     for idx in range(len(seen)):
-        if seen[idx] == False:
+        if not seen[idx]:
             return idx + 1
 
     return len(A) + 1

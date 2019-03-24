@@ -30,6 +30,7 @@ Detected time complexity: O(N)
 RANGE_N = (0, 1000000)
 RANGE_E = ('(', ')')
 
+
 def solution(S):
     # write your code in Python 3.6
     assert S is not None
