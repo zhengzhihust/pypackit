@@ -109,7 +109,3 @@ def solution(A):
                 return size
 
     return 0
-
-if __name__ == '__main__':
-    A = [1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]
-    print(solution(A))
