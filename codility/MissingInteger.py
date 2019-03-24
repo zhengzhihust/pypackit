@@ -19,6 +19,9 @@ N is an integer within the range [1..100,000];
 each element of array A is an integer within the range [−1,000,000..1,000,000].
 Copyright 2009–2019 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
 """
+"""
+Detected time complexity: O(N**2)
+"""
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 RANGE_N = (1,100000)
