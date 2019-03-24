@@ -40,3 +40,18 @@ def solution(A):
             if i not in A:
                 return i
     return M + 1
+
+"""
+Detected time complexity: O(N)
+"""
+def solution_best(A):
+    seen = [False] * len(A)
+    for value in A:
+        if 0 < value <= len(A):
+            seen[value - 1] = True
+
+    for idx in range(len(seen)):
+        if seen[idx] == False:
+            return idx + 1
+
+    return len(A) + 1
